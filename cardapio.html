@@ -75,7 +75,7 @@
   <div class="container">
     <h1>Cardápio de Pizzas</h1>
     
-    <!-- pica salgadas -->
+    <!-- pizzzza salgadas -->
     <h2>Pizzas Salgadas</h2>
     <div id="pizzasSalgadas">
       <button onclick="adicionarAoCarrinho('mussarela', 50)">Mussarela</button>
@@ -87,7 +87,7 @@
       <button onclick="adicionarAoCarrinho('bolonhesa', 50)">Bolonhesa</button>
     </div>
     
-    <!-- picas doces -->
+    <!-- pizzzzas doces -->
     <h2>Pizzas Doces</h2>
     <div id="pizzasDoces">
       <button onclick="adicionarAoCarrinho('anny', 50)">Anny</button>
@@ -111,7 +111,7 @@
 
 <script src="js/app.js"></script>
 
-    <!-- opções carrinho -->
+    <!-- opções carrinho vrum vrum -->
     <button onclick="verCarrinho()">Ver Carrinho</button>
     <button onclick="finalizarPedido()">Finalizar Pedido</button>
   </div>
@@ -130,10 +130,10 @@
   </div>
 
   <script>
-    // Array para armazenar os itens do carrinho
+    // armazena item
     const carrinho = [];
 
-    // Função para adicionar ao carrinho
+    // identifica carrinho vrum vrum
     function adicionarAoCarrinho(id, valor) {
       const pizza = { id, valor };
       carrinho.push(pizza);
@@ -141,7 +141,7 @@
       console.log(carrinho); // Para ver o carrinho no console
     }
 
-    // Função para ver o conteúdo do carrinho
+    // ver carrinho
     function verCarrinho() {
       let resumoCarrinho = "Itens no Carrinho:\n";
       carrinho.forEach((item, index) => {
@@ -151,7 +151,7 @@
       alert(resumoCarrinho);
     }
 
-    // Função para abrir o popup de confirmação do pedido
+    // função abrir carrinho
     function finalizarPedido() {
       if (carrinho.length === 0) {
         alert("O carrinho está vazio. Adicione uma pizza para prosseguir!");
@@ -169,13 +169,13 @@
       document.getElementById("overlay").style.display = "block";
     }
 
-    // Função para fechar o popup
+    // fecha pop
     function fecharPopup() {
       document.getElementById("popup").style.display = "none";
       document.getElementById("overlay").style.display = "none";
     }
 
-    // Função para confirmar o pedido
+    // confirma
     function confirmarPedido() {
       fecharPopup();
       window.location.href = "pagamento.html"; // Redireciona para a página de pagamento
